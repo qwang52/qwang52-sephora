@@ -1,9 +1,13 @@
 package com.qwang52.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.math.BigDecimal;
 
-public class Transaction {
-    public Transaction(){}
+@Entity
+@Table(name = "transactions")
+public class Order {
+    public Order(){}
 
     private long ordernumber;
 

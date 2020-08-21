@@ -1,4 +1,4 @@
-package com.qwang52.repository;
+package com.qwang52.jdbc;
 
 import com.qwang52.model.Transaction;
 
@@ -33,9 +33,9 @@ public class TransactionDao {
                 BigDecimal ordertotal = rs.getBigDecimal("ordertotal");
                 //Fill the object
                 Transaction transaction = new Transaction();
-                transaction.setOrdernumber(ordernumber);
-                transaction.setCustomerid(customerid);
-                transaction.setItemnumber(itemnumber);
+                //transaction.setId(id);
+                //transaction.setCustomerid(customerid);
+                //transaction.setItemnumber(itemnumber);
                 transaction.setOrdertotal(ordertotal);
                 transactions.add(transaction);
             }
